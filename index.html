@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a0a0a">
+<title>Rania Shop — Boutique féminine à Kénitra · Pièces uniques & exclusives</title>
+<meta name="description" content="Rania Shop, boutique féminine à Kénitra. Chic, élégance et style : des pièces uniques et exclusives pour chaque femme. Livraison partout au Maroc. 115 Av. Mohamed V — ouvert jusqu'à 22h00.">
+<meta property="og:title" content="Rania Shop — Des pièces uniques pour chaque femme">
+<meta property="og:description" content="Boutique féminine à Kénitra. Chic • Élégance • Style. Livraison partout au Maroc.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='15' fill='%230a0a0a'/><text x='16' y='23' font-size='20' font-family='Georgia,serif' font-style='italic' fill='%23c8b49a' text-anchor='middle'>R</text></svg>">
+</head>
+
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<!-- ══════════════════════════════════ HEADER ══════════════════════════════ -->
+<header class="hdr">
+  <div class="hdr__in">
+    <button class="icon-btn burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mmenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a class="brand" href="index.html" aria-label="Rania Shop — accueil">
+      <span class="brand__mark" aria-hidden="true">R</span>
+      <span class="brand__txt">
+        <span class="brand__name">Rania Shop</span>
+        <span class="brand__tag">Chic · Élégance · Style</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <ul class="nav__list">
+        <li><a class="nav__a" href="index.html" aria-current="page">Accueil</a></li>
+        <li><a class="nav__a" href="shop.html">Collection</a></li>
+        <li><a class="nav__a" href="lookbook.html">Lookbook</a></li>
+        <li><a class="nav__a" href="about.html">La Boutique</a></li>
+        <li><a class="nav__a" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hdr__act">
+      <a class="icon-btn" href="https://www.instagram.com/rania_shop_kenitra/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <button class="icon-btn cart-btn" data-cart-open aria-label="Ouvrir le panier">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-badge" data-cart-count>0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════ MOBILE MENU ════════════════════════════ -->
+<div class="mmenu" id="mmenu">
+  <nav aria-label="Menu mobile">
+    <ul class="mmenu__list">
+      <li><a class="mmenu__a" href="index.html">Accueil <i>01</i></a></li>
+      <li><a class="mmenu__a" href="shop.html">Collection <i>02</i></a></li>
+      <li><a class="mmenu__a" href="lookbook.html">Lookbook <i>03</i></a></li>
+      <li><a class="mmenu__a" href="about.html">La Boutique <i>04</i></a></li>
+      <li><a class="mmenu__a" href="contact.html">Contact <i>05</i></a></li>
+    </ul>
+  </nav>
+  <div class="mmenu__foot">
+    <a class="btn btn--light" href="shop.html">Découvrir la collection</a>
+    <div class="mmenu__meta">115 Av. Mohamed V — Kénitra</div>
+    <div class="mmenu__meta">Ouvert tous les jours · 10h00 → 22h00</div>
+    <div class="socs">
+      <a class="soc" href="https://www.instagram.com/rania_shop_kenitra/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a class="soc" href="https://wa.me/212646263259" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15s-.77.96-.94 1.16c-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.01-1.04 2.47 1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.07 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.36c0-4.53 3.69-8.22 8.23-8.22 2.2 0 4.26.86 5.82 2.41a8.16 8.16 0 0 1 2.41 5.82c0 4.54-3.69 8.21-8.23 8.21z"/></svg>
+      </a>
+      <a class="soc" href="tel:+212646263259" aria-label="Appeler">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ═══════════════════════════════ HERO ═════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero__media" data-parallax="0.2">
+      <div class="hero__zoom">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1400&q=80" alt="Silhouette féminine en tenue d'une élégance minimaliste" fetchpriority="high"></div>
+      </div>
+    </div>
+    <div class="hero__scrim"></div>
+
+    <div class="hero__in">
+      <div class="hero__badge" aria-hidden="true"><span>Rania</span></div>
+      <h1>Des pièces uniques pour chaque femme</h1>
+      <p class="hero__tag">Chic &nbsp;•&nbsp; Élégance &nbsp;•&nbsp; Style</p>
+      <p class="hero__sub">Boutique féminine à Kénitra. Des pièces choisies une à une, en quantités limitées, livrées partout au Maroc.</p>
+      <div class="hero__cta">
+        <a class="btn btn--light" href="shop.html">Découvrir la collection</a>
+        <a class="btn btn--outline-light" href="contact.html">Visiter la boutique</a>
+      </div>
+    </div>
+
+    <a class="hero__scroll" href="#collections" aria-label="Défiler vers les collections">
+      <span>Défiler</span><i></i>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════ TICKER ════════════════════════════════ -->
+  <div class="ticker" role="region" aria-label="Rania Shop en bref">
+    <div class="ticker__track">
+      <div class="ticker__grp">
+        <span>Livraison partout au Maroc</span>
+        <span>Pièces uniques &amp; exclusives</span>
+        <span>+34K femmes nous suivent</span>
+        <span>Paiement à la livraison</span>
+        <span>Kénitra · ouvert jusqu'à 22h00</span>
+      </div>
+      <div class="ticker__grp" aria-hidden="true">
+        <span>Livraison partout au Maroc</span>
+        <span>Pièces uniques &amp; exclusives</span>
+        <span>+34K femmes nous suivent</span>
+        <span>Paiement à la livraison</span>
+        <span>Kénitra · ouvert jusqu'à 22h00</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ NOS COLLECTIONS ═══════════════════════════ -->
+  <section class="sec" id="collections">
+    <div class="container">
+      <header class="sec-head">
+        <div class="sec-head__row">
+          <div>
+            <span class="label">Nos Collections</span>
+            <h2 class="h2" style="margin-top:16px;max-width:16ch">Cinq univers, une même exigence</h2>
+          </div>
+          <a class="link sec-head__link" href="shop.html">Voir toute la collection
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </header>
+    </div>
+
+    <div class="coll">
+      <a class="collcard" href="shop.html#shop" data-reveal>
+        <div class="ph collcard__ph"><img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=700&q=80" alt="Robes" loading="lazy"></div>
+        <div class="collcard__body">
+          <span class="collcard__idx">01</span>
+          <h3 class="collcard__name">Robes</h3>
+          <span class="collcard__go">Découvrir
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="collcard" href="shop.html#shop" data-reveal>
+        <div class="ph collcard__ph"><img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=crop&w=700&q=80" alt="Ensembles" loading="lazy"></div>
+        <div class="collcard__body">
+          <span class="collcard__idx">02</span>
+          <h3 class="collcard__name">Ensembles</h3>
+          <span class="collcard__go">Découvrir
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="collcard" href="shop.html#shop" data-reveal>
+        <div class="ph collcard__ph"><img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=700&q=80" alt="Hauts et tops" loading="lazy"></div>
+        <div class="collcard__body">
+          <span class="collcard__idx">03</span>
+          <h3 class="collcard__name">Hauts &amp; Tops</h3>
+          <span class="collcard__go">Découvrir
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="collcard" href="shop.html#shop" data-reveal>
+        <div class="ph collcard__ph"><img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=700&q=80" alt="Abayas et kaftans" loading="lazy"></div>
+        <div class="collcard__body">
+          <span class="collcard__idx">04</span>
+          <h3 class="collcard__name">Abayas &amp; Kaftans</h3>
+          <span class="collcard__go">Découvrir
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="collcard" href="shop.html#shop" data-reveal>
+        <div class="ph collcard__ph"><img src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?auto=format&fit=crop&w=700&q=80" alt="Accessoires" loading="lazy"></div>
+        <div class="collcard__body">
+          <span class="collcard__idx">05</span>
+          <h3 class="collcard__name">Accessoires</h3>
+          <span class="collcard__go">Découvrir
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════ GRAND OPENING + STATS ══════════════════════ -->
+  <section class="sec sec--dark on-dark">
+    <div class="container">
+      <div class="split split--rev split--wide">
+
+        <div class="split__media" data-reveal="left">
+          <div class="collage">
+            <div class="collage__a zoom-slow">
+              <div class="ph"><img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?auto=format&fit=crop&w=900&q=80" alt="L'intérieur de la boutique Rania Shop" loading="lazy"></div>
+            </div>
+            <div class="collage__b">
+              <div class="ph"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80" alt="Vitrine de la boutique" loading="lazy"></div>
+            </div>
+          </div>
+          <div class="pin pin--tl">DJ <strong>Live</strong></div>
+          <div class="pin pin--br"><span>Grand</span><strong>Opening</strong></div>
+        </div>
+
+        <div class="split__body" data-reveal="right">
+          <span class="label">Actualités · Kénitra</span>
+          <h2 class="h2">Une soirée entière pour célébrer l'ouverture</h2>
+          <p class="lead">Le Grand Opening de Rania Shop a réuni nos clientes, nos partenaires et bien plus encore. Musique live, champagne et jusqu'à 30 % de réduction sur toute la collection inaugurale — une soirée qu'on n'oublie pas.</p>
+
+          <div class="split__facts">
+            <div class="split__fact"><b>30%</b><span>De réduction sur la collection inaugurale</span></div>
+            <div class="split__fact"><b>DJ</b><span>Set live toute la soirée</span></div>
+            <div class="split__fact"><b>22h</b><span>Ouvert tous les jours, jusqu'à 22h00</span></div>
+          </div>
+
+          <div class="hero__cta" style="margin-top:0">
+            <a class="btn btn--light" href="about.html">Revivre la soirée</a>
+            <a class="btn btn--outline-light" href="contact.html">Nous rendre visite</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Animated counters ── -->
+      <div class="stats" style="margin-top:clamp(48px,6vw,84px)" data-reveal="wipe">
+        <div class="stat">
+          <div class="stat__n"><b data-count="34.3" data-decimals="1" data-suffix="K+">0</b></div>
+          <div class="stat__l">Abonnées<br>Instagram</div>
+        </div>
+        <div class="stat">
+          <div class="stat__n"><b data-count="1500" data-suffix="+">0</b></div>
+          <div class="stat__l">Pièces<br>vendues</div>
+        </div>
+        <div class="stat">
+          <div class="stat__n"><b data-count="5">0</b></div>
+          <div class="stat__l">Collections<br>signatures</div>
+        </div>
+        <div class="stat">
+          <div class="stat__n"><b data-count="100" data-suffix="%">0</b></div>
+          <div class="stat__l">Livraison<br>partout au Maroc</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ NOUVEAUTÉS ════════════════════════════ -->
+  <section class="sec sec--ivory" id="nouveautes">
+    <div class="container">
+      <header class="sec-head">
+        <div class="sec-head__row">
+          <div>
+            <span class="label">Pièces uniques</span>
+            <h2 class="h2" style="margin-top:16px;max-width:14ch">Les dernières arrivées</h2>
+          </div>
+          <a class="link sec-head__link" href="shop.html">Toute la collection
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </header>
+    </div>
+
+    <!-- rendered by script.js from products.js -->
+    <div class="rail" id="featured"></div>
+  </section>
+
+  <!-- ═════════════════════════════ POURQUOI RANIA ══════════════════════════ -->
+  <section class="sec">
+    <div class="container">
+      <header class="sec-head">
+        <span class="label">Pourquoi Rania Shop</span>
+        <h2 class="h2" style="max-width:18ch">L'élégance, sans compromis</h2>
+      </header>
+
+      <div class="feat">
+        <div class="feat__cell" data-reveal>
+          <span class="feat__ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1.2 5.4a5.5 5.5 0 0 1-9.6 0z"/><path d="m7.6 13.5-1.1 7.5h11l-1.1-7.5"/><path d="M12 8.4v10"/></svg>
+          </span>
+          <span class="feat__n">01</span>
+          <h3 class="feat__t">Pièces uniques &amp; exclusives</h3>
+          <p class="feat__d">Chaque pièce est sourcée en petite série. Ce que vous voyez n'est pas dans toutes les boutiques.</p>
+        </div>
+
+        <div class="feat__cell" data-reveal>
+          <span class="feat__ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 6.5h11v9h-11z"/><path d="M12.5 10h4l3 3v2.5h-7z"/><circle cx="6" cy="18" r="1.9"/><circle cx="17" cy="18" r="1.9"/></svg>
+          </span>
+          <span class="feat__n">02</span>
+          <h3 class="feat__t">Livraison partout au Maroc</h3>
+          <p class="feat__d">De Kénitra à Agadir, votre commande arrive chez vous. Paiement à la livraison, sans risque.</p>
+        </div>
+
+        <div class="feat__cell" data-reveal>
+          <span class="feat__ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8 14.9 8l5.8.9-4.2 4.1 1 5.8-5.5-2.9-5.5 2.9 1-5.8L3.3 8.9 9.1 8z"/></svg>
+          </span>
+          <span class="feat__n">03</span>
+          <h3 class="feat__t">Qualité &amp; élégance</h3>
+          <p class="feat__d">Des matières choisies pour leur tombé, leur tenue et leur façon de vieillir. Rien de jetable.</p>
+        </div>
+
+        <div class="feat__cell" data-reveal>
+          <span class="feat__ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M2.6 19.5a6.6 6.6 0 0 1 12.8 0"/><path d="M16.5 5.4a3.2 3.2 0 0 1 0 5.9"/><path d="M18 14.4a6.6 6.6 0 0 1 3.5 5.1"/></svg>
+          </span>
+          <span class="feat__n">04</span>
+          <h3 class="feat__t">Une communauté de +34K femmes</h3>
+          <p class="feat__d">Instagram, notre vitrine vivante : 34,3 K de femmes suivent Rania Shop et nos nouveautés en avant-première.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ AVIS CLIENTS ══════════════════════════ -->
+  <section class="sec sec--ivory">
+    <div class="container">
+      <header class="sec-head">
+        <span class="label">Elles nous font confiance</span>
+        <h2 class="h2" style="max-width:16ch">5.0 — et pas une demi-étoile en moins</h2>
+      </header>
+
+      <div class="rev">
+        <article class="revcard" data-reveal>
+          <div class="stars" data-stars aria-label="Note : 5 sur 5">
+            <span class="star"><svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 18.2 5.6 21.6 7 14.5 1.7 9.5l7.2-.9z" fill="currentColor"/></svg></span>
+            <span class="star"><svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 18.2 5.6 21.6 7 14.5 1.7 9.5l7.2-.9z" fill="currentColor"/></svg></span>
+            <span class="star"><svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 18.2 5.6 21.6 7 14.5 1.7 9.5l7.2-.9z" fill="currentColor"/></svg></span>
+            <span class="star"><svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 18.2 5.6 21.6 7 14.5 1.7 9.5l7.2-.9z" fill="currentColor"/></svg></span>
+            <span class="star"><svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 18.2 5.6 21.6 7 14.5 1.7 9.5l7.2-.9z" fill="currentColor"/></svg></span>
+          </div>
+          <blockquote class="revcard__t">« J'ai commandé depuis Casablanca, ma robe est arrivée en deux jours. La qualité du tissu est au-dessus de ce que j'imaginais — on sent vraiment que ce sont des pièces choisies, pas achetées en gros. »</blockquote>
+          <footer class="revcard__who">
+            <span class="revcard__av" aria-hidden="true">S</span>
+            <span>
+              <span class="revcard__n">Salma B.</span>
+              <span class="revcard__c">Cliente — Casablanca</span>
+            </span>
+          </footer>
+        </article>
+
+        <article class="revcard" data-reveal>
+          <div class="stars" data-stars aria-label="Note : 5 sur 5">
+            <span class="star"><svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 18.2 5.6 21.6 7 14.5 1.7 9.5l7.2-.9z" fill="currentColor"/></svg></span>
+            <span class="star"><svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 18.2 5.6 21.6 7 14.5 1.7 9.5l7.2-.9z" fill="currentColor"/></svg></span>
+            <span class="star"><svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 18.2 5.6 21.6 7 14.5 1.7 9.5l7.2-.9z" fill="currentColor"/></svg></span>
+            <span class="star"><svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 18.2 5.6 21.6 7 14.5 1.7 9.5l7.2-.9z" fill="currentColor"/></svg></span>
+            <span class="star"><svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 18.2 5.6 21.6 7 14.5 1.7 9.5l7.2-.9z" fill="currentColor"/></svg></span>
+          </div>
+          <blockquote class="revcard__t">« Je suis passée à la boutique pendant le Grand Opening, l'ambiance était incroyable. On m'a conseillé une tenue pour un mariage, j'ai reçu exactement ce que j'imaginais en boutique. Service au top. »</blockquote>
+          <footer class="revcard__who">
+            <span class="revcard__av" aria-hidden="true">H</span>
+            <span>
+              <span class="revcard__n">Hanane E.</span>
+              <span class="revcard__c">Cliente — Kénitra</span>
+            </span>
+          </footer>
+        </article>
+
+        <article class="revcard" data-reveal>
+          <div class="stars" data-stars aria-label="Note : 5 sur 5">
+            <span class="star"><svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 18.2 5.6 21.6 7 14.5 1.7 9.5l7.2-.9z" fill="currentColor"/></svg></span>
+            <span class="star"><svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 18.2 5.6 21.6 7 14.5 1.7 9.5l7.2-.9z" fill="currentColor"/></svg></span>
+            <span class="star"><svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 18.2 5.6 21.6 7 14.5 1.7 9.5l7.2-.9z" fill="currentColor"/></svg></span>
+            <span class="star"><svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 18.2 5.6 21.6 7 14.5 1.7 9.5l7.2-.9z" fill="currentColor"/></svg></span>
+            <span class="star"><svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 18.2 5.6 21.6 7 14.5 1.7 9.5l7.2-.9z" fill="currentColor"/></svg></span>
+          </div>
+          <blockquote class="revcard__t">« Je suis cliente fidèle depuis l'ouverture. Les abayas sont des pièces uniques, et WhatsApp répond en quelques minutes. Franchement, la meilleure boutique de Kénitra pour la mode. »</blockquote>
+          <footer class="revcard__who">
+            <span class="revcard__av" aria-hidden="true">M</span>
+            <span>
+              <span class="revcard__n">Meryem A.</span>
+              <span class="revcard__c">Cliente — Rabat</span>
+            </span>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ INSTAGRAM ═════════════════════════════ -->
+  <section class="sec sec--dark on-dark">
+    <div class="container">
+      <header class="sec-head">
+        <div class="sec-head__row">
+          <div>
+            <span class="label">Sur Instagram</span>
+            <h2 class="h2" style="margin-top:16px;max-width:14ch">@rania_shop_kenitra</h2>
+          </div>
+          <a class="link sec-head__link" href="https://www.instagram.com/rania_shop_kenitra/" target="_blank" rel="noopener">Suivre la page
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </header>
+
+      <div class="ig">
+        <a class="igcell" href="https://www.instagram.com/rania_shop_kenitra/" target="_blank" rel="noopener" aria-label="Publication Instagram"><div class="ph"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b8?auto=format&fit=crop&w=500&q=80" alt="Sélection de pièces en boutique" loading="lazy"></div><span class="igcell__ov"><span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 5.6a5.2 5.2 0 0 0-3.7-3.7C14.6 1.4 12 1.4 12 1.4s-2.6 0-5.1.5a5.2 5.2 0 0 0-3.7 3.7C2.7 8.1 2.7 12 2.7 12s0 3.9.5 6.4a5.2 5.2 0 0 0 3.7 3.7c2.5.5 5.1.5 5.1.5s2.6 0 5.1-.5a5.2 5.2 0 0 0 3.7-3.7c.5-2.5.5-6.4.5-6.4s0-3.9-.5-6.4z"/><circle cx="12" cy="12" r="4"/></svg>1 248</span><span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.6-.8L3 20.5l1.5-4.7A8.4 8.4 0 0 1 12 3.5a8.4 8.4 0 0 1 9 8z"/></svg>86</span></span></a>
+
+        <a class="igcell" href="https://www.instagram.com/rania_shop_kenitra/" target="_blank" rel="noopener" aria-label="Publication Instagram"><div class="ph"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=80" alt="Essai d'une tenue Rania Shop" loading="lazy"></div><span class="igcell__ov"><span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 5.6a5.2 5.2 0 0 0-3.7-3.7C14.6 1.4 12 1.4 12 1.4s-2.6 0-5.1.5a5.2 5.2 0 0 0-3.7 3.7C2.7 8.1 2.7 12 2.7 12s0 3.9.5 6.4a5.2 5.2 0 0 0 3.7 3.7c2.5.5 5.1.5 5.1.5s2.6 0 5.1-.5a5.2 5.2 0 0 0 3.7-3.7c.5-2.5.5-6.4.5-6.4s0-3.9-.5-6.4z"/><circle cx="12" cy="12" r="4"/></svg>2 106</span></span></a>
+
+        <a class="igcell" href="https://www.instagram.com/rania_shop_kenitra/" target="_blank" rel="noopener" aria-label="Publication Instagram"><div class="ph"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=500&q=80" alt="Silhouette en robe de soirée" loading="lazy"></div><span class="igcell__ov"><span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 5.6a5.2 5.2 0 0 0-3.7-3.7C14.6 1.4 12 1.4 12 1.4s-2.6 0-5.1.5a5.2 5.2 0 0 0-3.7 3.7C2.7 8.1 2.7 12 2.7 12s0 3.9.5 6.4a5.2 5.2 0 0 0 3.7 3.7c2.5.5 5.1.5 5.1.5s2.6 0 5.1-.5a5.2 5.2 0 0 0 3.7-3.7c.5-2.5.5-6.4.5-6.4s0-3.9-.5-6.4z"/><circle cx="12" cy="12" r="4"/></svg>1 890</span></span></a>
+
+        <a class="igcell" href="https://www.instagram.com/rania_shop_kenitra/" target="_blank" rel="noopener" aria-label="Publication Instagram"><div class="ph"><img src="https://images.unsplash.com/photo-1495385794356-15371f348c31?auto=format&fit=crop&w=500&q=80" alt="Détail de tissu en boutique" loading="lazy"></div><span class="igcell__ov"><span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 5.6a5.2 5.2 0 0 0-3.7-3.7C14.6 1.4 12 1.4 12 1.4s-2.6 0-5.1.5a5.2 5.2 0 0 0-3.7 3.7C2.7 8.1 2.7 12 2.7 12s0 3.9.5 6.4a5.2 5.2 0 0 0 3.7 3.7c2.5.5 5.1.5 5.1.5s2.6 0 5.1-.5a5.2 5.2 0 0 0 3.7-3.7c.5-2.5.5-6.4.5-6.4s0-3.9-.5-6.4z"/><circle cx="12" cy="12" r="4"/></svg>1 022</span></span></a>
+
+        <a class="igcell" href="https://www.instagram.com/rania_shop_kenitra/" target="_blank" rel="noopener" aria-label="Publication Instagram"><div class="ph"><img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=500&q=80" alt="Portrait d'une cliente en abaya" loading="lazy"></div><span class="igcell__ov"><span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 5.6a5.2 5.2 0 0 0-3.7-3.7C14.6 1.4 12 1.4 12 1.4s-2.6 0-5.1.5a5.2 5.2 0 0 0-3.7 3.7C2.7 8.1 2.7 12 2.7 12s0 3.9.5 6.4a5.2 5.2 0 0 0 3.7 3.7c2.5.5 5.1.5 5.1.5s2.6 0 5.1-.5a5.2 5.2 0 0 0 3.7-3.7c.5-2.5.5-6.4.5-6.4s0-3.9-.5-6.4z"/><circle cx="12" cy="12" r="4"/></svg>2 730</span></span></a>
+
+        <a class="igcell" href="https://www.instagram.com/rania_shop_kenitra/" target="_blank" rel="noopener" aria-label="Publication Instagram"><div class="ph"><img src="https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?auto=format&fit=crop&w=500&q=80" alt="Vitrine et accessoires" loading="lazy"></div><span class="igcell__ov"><span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 5.6a5.2 5.2 0 0 0-3.7-3.7C14.6 1.4 12 1.4 12 1.4s-2.6 0-5.1.5a5.2 5.2 0 0 0-3.7 3.7C2.7 8.1 2.7 12 2.7 12s0 3.9.5 6.4a5.2 5.2 0 0 0 3.7 3.7c2.5.5 5.1.5 5.1.5s2.6 0 5.1-.5a5.2 5.2 0 0 0 3.7-3.7c.5-2.5.5-6.4.5-6.4s0-3.9-.5-6.4z"/><circle cx="12" cy="12" r="4"/></svg>1 457</span></span></a>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:clamp(28px,4vw,44px)">
+        <a class="btn btn--light" href="https://www.instagram.com/rania_shop_kenitra/" target="_blank" rel="noopener">Suivre @rania_shop_kenitra</a>
+        <span style="font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5)">34,3 K de femmes · nouveaux modèles chaque semaine</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ VISITEZ-NOUS ═══════════════════════════ -->
+  <section class="sec">
+    <div class="container">
+      <div class="split__body" data-reveal style="max-width:720px">
+        <span class="label">Nous rendre visite</span>
+          <h2 class="h2" style="margin:18px 0 22px">115 Av. Mohamed V, Kénitra</h2>
+          <div class="info">
+            <div class="info__row">
+              <span class="info__k">Horaires</span>
+              <span class="info__v">
+                <span class="hours">
+                  <span class="hours__d"><span>Lundi — Vendredi</span><b>10h00 — 22h00</b></span>
+                  <span class="hours__d"><span>Samedi</span><b>10h00 — 22h00</b></span>
+                  <span class="hours__d hours__d--open"><span>Dimanche</span><b>11h00 — 22h00</b></span>
+                </span>
+                <span class="sm">Ouvert tous les jours jusqu'à 22h00</span>
+              </span>
+            </div>
+            <div class="info__row">
+              <span class="info__k">Téléphone</span>
+              <span class="info__v"><a href="tel:+212646263259">06 46 26 32 59</a><span class="sm">WhatsApp &amp; appels</span></span>
+            </div>
+          </div>
+          <div class="hero__cta" style="margin-top:26px">
+            <a class="btn" href="contact.html">Itinéraire &amp; contact</a>
+            <a class="btn btn--ghost" href="https://wa.me/212646263259" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+          </div>
+        </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ════════════════════════════════ FOOTER ═════════════════════════════════ -->
+<footer class="ftr">
+  <div class="container">
+    <div class="ftr__cta">
+      <h2 class="h2">Chic, élégance, style — et une pièce qui ne ressemble qu'à vous.</h2>
+      <a class="btn btn--light" href="shop.html">Découvrir la collection
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <div class="ftr__cols">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:18px">
+          <span class="brand__mark" aria-hidden="true">R</span>
+          <span class="brand__txt">
+            <span class="brand__name">Rania Shop</span>
+            <span class="brand__tag">Chic · Élégance · Style</span>
+          </span>
+        </a>
+        <p style="font-size:.85rem;line-height:1.75;max-width:30ch">Boutique féminine à Kénitra. Des pièces uniques et exclusives, sélectionnées pour toutes les femmes, livrées partout au Maroc.</p>
+        <div class="socs" style="margin-top:20px">
+          <a class="soc" href="https://www.instagram.com/rania_shop_kenitra/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a class="soc" href="https://wa.me/212646263259" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15s-.77.96-.94 1.16c-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.01-1.04 2.47 1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.07 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.36c0-4.53 3.69-8.22 8.23-8.22 2.2 0 4.26.86 5.82 2.41a8.16 8.16 0 0 1 2.41 5.82c0 4.54-3.69 8.21-8.23 8.21z"/></svg>
+          </a>
+          <a class="soc" href="tel:+212646263259" aria-label="Appeler">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="ftr__h">Boutique</h3>
+        <ul class="ftr__list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="shop.html">Collection</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+          <li><a href="about.html">La Boutique</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="ftr__h">Catégories</h3>
+        <ul class="ftr__list">
+          <li><a href="shop.html">Robes</a></li>
+          <li><a href="shop.html">Ensembles</a></li>
+          <li><a href="shop.html">Hauts &amp; Tops</a></li>
+          <li><a href="shop.html">Abayas &amp; Kaftans</a></li>
+          <li><a href="shop.html">Accessoires</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="ftr__h">Nous écrire</h3>
+        <p style="font-size:.85rem;color:rgba(255,255,255,.62);margin-bottom:14px">Recevez les nouveautés en avant-première.</p>
+        <form data-newsletter>
+          <div class="nl">
+            <input type="email" name="nl" placeholder="Votre e-mail" aria-label="Votre adresse e-mail" required>
+            <button type="submit" aria-label="S'inscrire">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+          <p class="nl__ok" style="display:none;margin-top:10px;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--champagne-2)">Merci — bienvenue chez Rania Shop.</p>
+        </form>
+        <div style="margin-top:22px">
+          <h3 class="ftr__h">Boutique</h3>
+          <ul class="ftr__list">
+            <li>115 Av. Mohamed V</li>
+            <li>Kénitra, Maroc</li>
+            <li><a href="tel:+212646263259">06 46 26 32 59</a></li>
+            <li>Ouvert jusqu'à 22h00</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ftr__word" aria-hidden="true">RANIA SHOP</div>
+
+  <div class="container">
+    <div class="ftr__bot">
+      <span>© <span data-year>2026</span> Rania Shop — Tous droits réservés</span>
+      <span>Des pièces uniques pour chaque femme</span>
+      <span>Livraison partout au Maroc</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile action bar — always within thumb reach -->
+<div class="stickybar">
+  <a class="btn btn--sm btn--ghost" href="shop.html">Voir la boutique</a>
+  <a class="btn btn--sm" href="https://wa.me/212646263259" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" style="width:17px;height:17px"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.36c0-4.53 3.69-8.22 8.23-8.22 2.2 0 4.26.86 5.82 2.41a8.16 8.16 0 0 1 2.41 5.82c0 4.54-3.69 8.21-8.23 8.21z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
